@@ -16,7 +16,6 @@ import {emailsManager} from "../managers/email-manager";
 import {emailConfirmationRepository} from "../repositories/emailConfirmation-repository";
 import {usersRepository} from "../repositories/users-repository";
 
-
 export const authRouter = Router({})
 
 authRouter.post('/login',
