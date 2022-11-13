@@ -12,7 +12,7 @@ import {UserDBType} from "../types/user-type";
 import {UserIpAddressType} from "../types/UserIpAddress";
 ///?maxPoolSize=20&w=majority
 const mongoUri = process.env.MONGO_URI || 'mongodb://0.0.0.0:27017'
-const dbName = process.env.mongoDBName || 'blogsAndPostsDb'
+const dbName = process.env.mongoDBName || 'blogPlatform'
 
 const blogSchema = new mongoose.Schema<BlogType>({
     id: {type: String, required: true},
