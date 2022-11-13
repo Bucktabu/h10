@@ -66,7 +66,7 @@ authRouter.post('/new-password',
             return res.sendStatus(404)
         }
 
-        await usersService.updateUserPassword(user.id, req.body.password)
+        await usersService.updateUserPassword(user.id, req.body.newPassword)
 
         return res.sendStatus(204)
     }
